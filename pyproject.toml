@@ -10,9 +10,7 @@ requires-python = ">=3.12,<3.13"
 dependencies = [
     "opencv-python (>=5.0.0.93,<6.0.0.0)",
     "matplotlib (>=3.11.2,<4.0.0)",
-    "ultralytics (>=8.4.163,<9.0.0)",
-    "transformers (>=5.17.0,<6.0.0)",
-    "accelerate (>=1.15.0,<2.0.0)"
+    "streamlit (>=1.64.0,<2.0.0)"
 ]
 
 
