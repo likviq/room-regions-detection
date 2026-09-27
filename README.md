@@ -4,6 +4,19 @@ Analyzes floor plan images: detects rooms, labels them, and exports room segment
 
 Room segmentation works by treating walls and other barriers as obstacles and flood-filling the remaining free space: each connected region of free pixels becomes a candidate room. Regions smaller than a configurable minimum area are discarded as noise. For each detected room the app computes its centroid and boundary segments (contour), which are used both for the visual overlay and the exported JSON data.
 
+# Limitations
+- amount of images
+
+# Assumptions
+- above part of the walls can be used as breakers for the entire plan
+- parts, that are between the walls and background are balkon or something on the outside
+
+# Next steps
+
+1. Improve image preprocessing to better distinguish the upper edges of walls from other objects in the image.
+2. Add filtering for the final components/segments in the image.
+3. Test SAM on existing images if quality is more important than speed.
+
 ## Requirements
 
 - Python 3.12+
