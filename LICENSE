@@ -1,16 +1,22 @@
-MIT License
-
 Copyright (c) 2026 Petro Pavliuk
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This repository was created as a technical assignment for a job application
+and is provided solely for the purpose of reviewing and evaluating the
+author's skills.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is granted to view this code and to run it for the sole purpose
+of verifying that it works as intended, as part of a hiring or evaluation
+process.
+
+No permission is granted to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, or to incorporate it (in
+whole or in part) into any other product, service, or codebase, whether for
+commercial, internal, research, or any other purpose, without prior written
+consent from the copyright holder.
+
+This Software is provided for evaluation purposes only. Any use beyond
+reviewing and running it to verify functionality is strictly prohibited
+without the express written permission of the copyright holder.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

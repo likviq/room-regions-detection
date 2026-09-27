@@ -38,7 +38,6 @@ class LabelConnectedRegionsCommand:
                 segments = await self._calculate_segments(component_mask)
                 room = RoomEntity(room_identifier, area, centroid, segments)
 
-                # --- Заливка регіону кольором ---
                 fill_color = await self._create_random_color()
                 mask_bool = component_mask.astype(bool)
                 labeled_image[mask_bool] = (
@@ -58,11 +57,9 @@ class LabelConnectedRegionsCommand:
             center_y = room.centroid["y"]
             text = str(room.room_identifier)
 
-            # Маркер центроїда — контрастна крапка (біла з чорною обводкою)
             cv2.circle(labeled_image, (center_x, center_y), 6, (0, 0, 0), -1)
             cv2.circle(labeled_image, (center_x, center_y), 4, (255, 255, 255), -1)
 
-            # Текст з обводкою: спочатку товста чорна лінія (контур), потім білий текст поверх
             cv2.putText(
                 labeled_image,
                 text,
@@ -70,7 +67,7 @@ class LabelConnectedRegionsCommand:
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.7,
                 (0, 0, 0),
-                4,          # товщина обводки
+                4,
                 cv2.LINE_AA
             )
             cv2.putText(
@@ -80,7 +77,7 @@ class LabelConnectedRegionsCommand:
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.7,
                 (255, 255, 255),
-                1,          # тонший, поверх обводки
+                1,
                 cv2.LINE_AA
             )
 
